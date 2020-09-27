@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6117A4F02520CC7900D94AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117A4EF2520CC7900D94AEE /* AppDelegate.swift */; };
+		6117A4F22520CC7900D94AEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117A4F12520CC7900D94AEE /* SceneDelegate.swift */; };
+		6117A4F52520CC7900D94AEE /* taichi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6117A4F32520CC7900D94AEE /* taichi.xcdatamodeld */; };
+		6117A4F72520CC7900D94AEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117A4F62520CC7900D94AEE /* ContentView.swift */; };
+		6117A4F92520CC7A00D94AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6117A4F82520CC7A00D94AEE /* Assets.xcassets */; };
+		6117A4FC2520CC7A00D94AEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6117A4FB2520CC7A00D94AEE /* Preview Assets.xcassets */; };
+		6117A4FF2520CC7A00D94AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6117A4FD2520CC7A00D94AEE /* LaunchScreen.storyboard */; };
+		6117A50A2520CC7A00D94AEE /* taichiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117A5092520CC7A00D94AEE /* taichiTests.swift */; };
+		6117A5152520CC7A00D94AEE /* taichiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117A5142520CC7A00D94AEE /* taichiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6117A5062520CC7A00D94AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6117A4E42520CC7900D94AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6117A4EB2520CC7900D94AEE;
+			remoteInfo = taichi;
+		};
+		6117A5112520CC7A00D94AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6117A4E42520CC7900D94AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6117A4EB2520CC7900D94AEE;
+			remoteInfo = taichi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6117A4EC2520CC7900D94AEE /* taichi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taichi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6117A4EF2520CC7900D94AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6117A4F12520CC7900D94AEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6117A4F42520CC7900D94AEE /* taichi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = taichi.xcdatamodel; sourceTree = "<group>"; };
+		6117A4F62520CC7900D94AEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6117A4F82520CC7A00D94AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6117A4FB2520CC7A00D94AEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6117A4FE2520CC7A00D94AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6117A5002520CC7A00D94AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6117A5052520CC7A00D94AEE /* taichiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taichiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6117A5092520CC7A00D94AEE /* taichiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taichiTests.swift; sourceTree = "<group>"; };
+		6117A50B2520CC7A00D94AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6117A5102520CC7A00D94AEE /* taichiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taichiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6117A5142520CC7A00D94AEE /* taichiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taichiUITests.swift; sourceTree = "<group>"; };
+		6117A5162520CC7A00D94AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6117A4E92520CC7900D94AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6117A5022520CC7A00D94AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6117A50D2520CC7A00D94AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6117A4E32520CC7900D94AEE = {
+			isa = PBXGroup;
+			children = (
+				6117A4EE2520CC7900D94AEE /* taichi */,
+				6117A5082520CC7A00D94AEE /* taichiTests */,
+				6117A5132520CC7A00D94AEE /* taichiUITests */,
+				6117A4ED2520CC7900D94AEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6117A4ED2520CC7900D94AEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6117A4EC2520CC7900D94AEE /* taichi.app */,
+				6117A5052520CC7A00D94AEE /* taichiTests.xctest */,
+				6117A5102520CC7A00D94AEE /* taichiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6117A4EE2520CC7900D94AEE /* taichi */ = {
+			isa = PBXGroup;
+			children = (
+				6117A4EF2520CC7900D94AEE /* AppDelegate.swift */,
+				6117A4F12520CC7900D94AEE /* SceneDelegate.swift */,
+				6117A4F62520CC7900D94AEE /* ContentView.swift */,
+				6117A4F82520CC7A00D94AEE /* Assets.xcassets */,
+				6117A4FD2520CC7A00D94AEE /* LaunchScreen.storyboard */,
+				6117A5002520CC7A00D94AEE /* Info.plist */,
+				6117A4F32520CC7900D94AEE /* taichi.xcdatamodeld */,
+				6117A4FA2520CC7A00D94AEE /* Preview Content */,
+			);
+			path = taichi;
+			sourceTree = "<group>";
+		};
+		6117A4FA2520CC7A00D94AEE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6117A4FB2520CC7A00D94AEE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6117A5082520CC7A00D94AEE /* taichiTests */ = {
+			isa = PBXGroup;
+			children = (
+				6117A5092520CC7A00D94AEE /* taichiTests.swift */,
+				6117A50B2520CC7A00D94AEE /* Info.plist */,
+			);
+			path = taichiTests;
+			sourceTree = "<group>";
+		};
+		6117A5132520CC7A00D94AEE /* taichiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6117A5142520CC7A00D94AEE /* taichiUITests.swift */,
+				6117A5162520CC7A00D94AEE /* Info.plist */,
+			);
+			path = taichiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6117A4EB2520CC7900D94AEE /* taichi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6117A5192520CC7A00D94AEE /* Build configuration list for PBXNativeTarget "taichi" */;
+			buildPhases = (
+				6117A4E82520CC7900D94AEE /* Sources */,
+				6117A4E92520CC7900D94AEE /* Frameworks */,
+				6117A4EA2520CC7900D94AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = taichi;
+			productName = taichi;
+			productReference = 6117A4EC2520CC7900D94AEE /* taichi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6117A5042520CC7A00D94AEE /* taichiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6117A51C2520CC7A00D94AEE /* Build configuration list for PBXNativeTarget "taichiTests" */;
+			buildPhases = (
+				6117A5012520CC7A00D94AEE /* Sources */,
+				6117A5022520CC7A00D94AEE /* Frameworks */,
+				6117A5032520CC7A00D94AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6117A5072520CC7A00D94AEE /* PBXTargetDependency */,
+			);
+			name = taichiTests;
+			productName = taichiTests;
+			productReference = 6117A5052520CC7A00D94AEE /* taichiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6117A50F2520CC7A00D94AEE /* taichiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6117A51F2520CC7A00D94AEE /* Build configuration list for PBXNativeTarget "taichiUITests" */;
+			buildPhases = (
+				6117A50C2520CC7A00D94AEE /* Sources */,
+				6117A50D2520CC7A00D94AEE /* Frameworks */,
+				6117A50E2520CC7A00D94AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6117A5122520CC7A00D94AEE /* PBXTargetDependency */,
+			);
+			name = taichiUITests;
+			productName = taichiUITests;
+			productReference = 6117A5102520CC7A00D94AEE /* taichiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6117A4E42520CC7900D94AEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = sclee;
+				TargetAttributes = {
+					6117A4EB2520CC7900D94AEE = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					6117A5042520CC7A00D94AEE = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 6117A4EB2520CC7900D94AEE;
+					};
+					6117A50F2520CC7A00D94AEE = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 6117A4EB2520CC7900D94AEE;
+					};
+				};
+			};
+			buildConfigurationList = 6117A4E72520CC7900D94AEE /* Build configuration list for PBXProject "taichi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6117A4E32520CC7900D94AEE;
+			productRefGroup = 6117A4ED2520CC7900D94AEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6117A4EB2520CC7900D94AEE /* taichi */,
+				6117A5042520CC7A00D94AEE /* taichiTests */,
+				6117A50F2520CC7A00D94AEE /* taichiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6117A4EA2520CC7900D94AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6117A4FF2520CC7A00D94AEE /* LaunchScreen.storyboard in Resources */,
+				6117A4FC2520CC7A00D94AEE /* Preview Assets.xcassets in Resources */,
+				6117A4F92520CC7A00D94AEE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6117A5032520CC7A00D94AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6117A50E2520CC7A00D94AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6117A4E82520CC7900D94AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6117A4F52520CC7900D94AEE /* taichi.xcdatamodeld in Sources */,
+				6117A4F02520CC7900D94AEE /* AppDelegate.swift in Sources */,
+				6117A4F72520CC7900D94AEE /* ContentView.swift in Sources */,
+				6117A4F22520CC7900D94AEE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6117A5012520CC7A00D94AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6117A50A2520CC7A00D94AEE /* taichiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6117A50C2520CC7A00D94AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6117A5152520CC7A00D94AEE /* taichiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6117A5072520CC7A00D94AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6117A4EB2520CC7900D94AEE /* taichi */;
+			targetProxy = 6117A5062520CC7A00D94AEE /* PBXContainerItemProxy */;
+		};
+		6117A5122520CC7A00D94AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6117A4EB2520CC7900D94AEE /* taichi */;
+			targetProxy = 6117A5112520CC7A00D94AEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6117A4FD2520CC7A00D94AEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6117A4FE2520CC7A00D94AEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6117A5172520CC7A00D94AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6117A5182520CC7A00D94AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6117A51A2520CC7A00D94AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"taichi/Preview Content\"";
+				DEVELOPMENT_TEAM = 7698T37TAB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = taichi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6117A51B2520CC7A00D94AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"taichi/Preview Content\"";
+				DEVELOPMENT_TEAM = 7698T37TAB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = taichi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6117A51D2520CC7A00D94AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7698T37TAB;
+				INFOPLIST_FILE = taichiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taichi.app/taichi";
+			};
+			name = Debug;
+		};
+		6117A51E2520CC7A00D94AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7698T37TAB;
+				INFOPLIST_FILE = taichiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taichi.app/taichi";
+			};
+			name = Release;
+		};
+		6117A5202520CC7A00D94AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7698T37TAB;
+				INFOPLIST_FILE = taichiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = taichi;
+			};
+			name = Debug;
+		};
+		6117A5212520CC7A00D94AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7698T37TAB;
+				INFOPLIST_FILE = taichiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = taichi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6117A4E72520CC7900D94AEE /* Build configuration list for PBXProject "taichi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6117A5172520CC7A00D94AEE /* Debug */,
+				6117A5182520CC7A00D94AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6117A5192520CC7A00D94AEE /* Build configuration list for PBXNativeTarget "taichi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6117A51A2520CC7A00D94AEE /* Debug */,
+				6117A51B2520CC7A00D94AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6117A51C2520CC7A00D94AEE /* Build configuration list for PBXNativeTarget "taichiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6117A51D2520CC7A00D94AEE /* Debug */,
+				6117A51E2520CC7A00D94AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6117A51F2520CC7A00D94AEE /* Build configuration list for PBXNativeTarget "taichiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6117A5202520CC7A00D94AEE /* Debug */,
+				6117A5212520CC7A00D94AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6117A4F32520CC7900D94AEE /* taichi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6117A4F42520CC7900D94AEE /* taichi.xcdatamodel */,
+			);
+			currentVersion = 6117A4F42520CC7900D94AEE /* taichi.xcdatamodel */;
+			path = taichi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6117A4E42520CC7900D94AEE /* Project object */;
+}
