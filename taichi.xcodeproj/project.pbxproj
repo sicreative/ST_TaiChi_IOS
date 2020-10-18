@@ -16,6 +16,15 @@
 		6117A4FF2520CC7A00D94AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6117A4FD2520CC7A00D94AEE /* LaunchScreen.storyboard */; };
 		6117A50A2520CC7A00D94AEE /* taichiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117A5092520CC7A00D94AEE /* taichiTests.swift */; };
 		6117A5152520CC7A00D94AEE /* taichiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117A5142520CC7A00D94AEE /* taichiUITests.swift */; };
+		61788DC2252A22150064500D /* BTFeatureTaiChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61788DC1252A22150064500D /* BTFeatureTaiChi.swift */; };
+		619A3914252874B8003720E1 /* BT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619A3913252874B8003720E1 /* BT.swift */; };
+		619A392E2528819B003720E1 /* BlueSTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117A5352520CF1900D94AEE /* BlueSTSDK.framework */; };
+		619A392F2528819B003720E1 /* BlueSTSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6117A5352520CF1900D94AEE /* BlueSTSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		619DDCE02521F20A004CD013 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619DDCDF2521F20A004CD013 /* HealthKit.framework */; };
+		619DDCE22521F4B8004CD013 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619DDCE12521F4B8004CD013 /* Health.swift */; };
+		619DDCE625245BDC004CD013 /* TaiChiRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619DDCE525245BDC004CD013 /* TaiChiRowView.swift */; };
+		619DDCE825245C50004CD013 /* TaiChiItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619DDCE725245C50004CD013 /* TaiChiItem.swift */; };
+		619DDCEA25246DDF004CD013 /* TaiChiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619DDCE925246DDF004CD013 /* TaiChiListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		619A39302528819B003720E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				619A392F2528819B003720E1 /* BlueSTSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6117A4EC2520CC7900D94AEE /* taichi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taichi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6117A4EF2520CC7900D94AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +74,15 @@
 		6117A5102520CC7A00D94AEE /* taichiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taichiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6117A5142520CC7A00D94AEE /* taichiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taichiUITests.swift; sourceTree = "<group>"; };
 		6117A5162520CC7A00D94AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6117A5352520CF1900D94AEE /* BlueSTSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueSTSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61788DC1252A22150064500D /* BTFeatureTaiChi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTFeatureTaiChi.swift; sourceTree = "<group>"; };
+		619A3913252874B8003720E1 /* BT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT.swift; sourceTree = "<group>"; };
+		619DDCDE2521F20A004CD013 /* taichi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = taichi.entitlements; sourceTree = "<group>"; };
+		619DDCDF2521F20A004CD013 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		619DDCE12521F4B8004CD013 /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		619DDCE525245BDC004CD013 /* TaiChiRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaiChiRowView.swift; sourceTree = "<group>"; };
+		619DDCE725245C50004CD013 /* TaiChiItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaiChiItem.swift; sourceTree = "<group>"; };
+		619DDCE925246DDF004CD013 /* TaiChiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaiChiListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619A392E2528819B003720E1 /* BlueSTSDK.framework in Frameworks */,
+				619DDCE02521F20A004CD013 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +119,7 @@
 				6117A5082520CC7A00D94AEE /* taichiTests */,
 				6117A5132520CC7A00D94AEE /* taichiUITests */,
 				6117A4ED2520CC7900D94AEE /* Products */,
+				6117A5342520CF1900D94AEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +136,8 @@
 		6117A4EE2520CC7900D94AEE /* taichi */ = {
 			isa = PBXGroup;
 			children = (
+				619DDCDE2521F20A004CD013 /* taichi.entitlements */,
+				619DDCE925246DDF004CD013 /* TaiChiListView.swift */,
 				6117A4EF2520CC7900D94AEE /* AppDelegate.swift */,
 				6117A4F12520CC7900D94AEE /* SceneDelegate.swift */,
 				6117A4F62520CC7900D94AEE /* ContentView.swift */,
@@ -109,6 +146,11 @@
 				6117A5002520CC7A00D94AEE /* Info.plist */,
 				6117A4F32520CC7900D94AEE /* taichi.xcdatamodeld */,
 				6117A4FA2520CC7A00D94AEE /* Preview Content */,
+				619DDCE12521F4B8004CD013 /* Health.swift */,
+				619DDCE525245BDC004CD013 /* TaiChiRowView.swift */,
+				619DDCE725245C50004CD013 /* TaiChiItem.swift */,
+				619A3913252874B8003720E1 /* BT.swift */,
+				61788DC1252A22150064500D /* BTFeatureTaiChi.swift */,
 			);
 			path = taichi;
 			sourceTree = "<group>";
@@ -139,6 +181,15 @@
 			path = taichiUITests;
 			sourceTree = "<group>";
 		};
+		6117A5342520CF1900D94AEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				619DDCDF2521F20A004CD013 /* HealthKit.framework */,
+				6117A5352520CF1900D94AEE /* BlueSTSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +200,7 @@
 				6117A4E82520CC7900D94AEE /* Sources */,
 				6117A4E92520CC7900D94AEE /* Frameworks */,
 				6117A4EA2520CC7900D94AEE /* Resources */,
+				619A39302528819B003720E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,7 +254,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = sclee;
 				TargetAttributes = {
 					6117A4EB2520CC7900D94AEE = {
@@ -270,10 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61788DC2252A22150064500D /* BTFeatureTaiChi.swift in Sources */,
+				619DDCEA25246DDF004CD013 /* TaiChiListView.swift in Sources */,
+				619DDCE825245C50004CD013 /* TaiChiItem.swift in Sources */,
+				619A3914252874B8003720E1 /* BT.swift in Sources */,
 				6117A4F52520CC7900D94AEE /* taichi.xcdatamodeld in Sources */,
 				6117A4F02520CC7900D94AEE /* AppDelegate.swift in Sources */,
 				6117A4F72520CC7900D94AEE /* ContentView.swift in Sources */,
+				619DDCE22521F4B8004CD013 /* Health.swift in Sources */,
 				6117A4F22520CC7900D94AEE /* SceneDelegate.swift in Sources */,
+				619DDCE625245BDC004CD013 /* TaiChiRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +404,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,6 +465,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -438,19 +498,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = taichi/taichi.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"taichi/Preview Content\"";
 				DEVELOPMENT_TEAM = 7698T37TAB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = taichi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,19 +522,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = taichi/taichi.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"taichi/Preview Content\"";
 				DEVELOPMENT_TEAM = 7698T37TAB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = taichi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sclee.taichi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
