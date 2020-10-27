@@ -54,6 +54,11 @@ class BT: NSObject, BlueSTSDKManagerDelegate, ObservableObject,BlueSTSDKNodeStat
          var end:[Date] = []
         let count = Int(sample.data[0].uint16Value)
         
+        if count==0 {
+            
+            return
+        }
+        
         
     
         for i in 0...count-1 {
@@ -70,13 +75,15 @@ class BT: NSObject, BlueSTSDKManagerDelegate, ObservableObject,BlueSTSDKNodeStat
 
     // MARK: - BlueSTSDKNodeStateDelegate
     func node(_ node: BlueSTSDKNode, didChange newState: BlueSTSDKNodeState, prevState: BlueSTSDKNodeState) {
-        if prevState != .connected && newState == .connected {
+        if newState == .connected {
             
             guard let feature = node.getFeatureOfType(BTFeatureTaiChi.self) else {
                 return self.bTDisConnect()
             }
   
             self.node = node
+            
+            
             
             feature.add(self)
             feature.enableNotification()
@@ -87,7 +94,8 @@ class BT: NSObject, BlueSTSDKManagerDelegate, ObservableObject,BlueSTSDKNodeStat
             }
         }
 
-        if (prevState == .connected && newState == .dead){
+        
+        if (prevState == .connected && (newState == .dead || newState == .lost)){
             bTConnect()
         }
         
@@ -211,7 +219,7 @@ class BT: NSObject, BlueSTSDKManagerDelegate, ObservableObject,BlueSTSDKNodeStat
            
             self.locationManager.startMonitoring(for: region)
 
-            self.locationManager.startRangingBeacons(satisfying: region.beaconIdentityConstraint)
+          //  self.locationManager.startRangingBeacons(satisfying: region.beaconIdentityConstraint)
             
           //  self.locationManager.startUpdatingLocation()
             
@@ -242,6 +250,8 @@ class BT: NSObject, BlueSTSDKManagerDelegate, ObservableObject,BlueSTSDKNodeStat
     private override init(){
         super.init()
         
+    
+        
         startupBeacons();
         
         
@@ -256,6 +266,7 @@ class BT: NSObject, BlueSTSDKManagerDelegate, ObservableObject,BlueSTSDKNodeStat
     func bTConnect(){
         btManager = BlueSTSDKManager.sharedInstance
         btManager.addDelegate(self)
+  
         
         if (btManager.isDiscovering){
             btManager.discoveryStop()
@@ -296,6 +307,10 @@ extension BT:CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         NSLog("Location Manager Enter")
+        
+     
+       
+        
         
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.getNotificationSettings { settings in

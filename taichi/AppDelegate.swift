@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
         Health.getInstant().healthConnect()
         
+        
+       
+       
           
         
         return true
@@ -36,6 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
+        
+        
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
@@ -73,8 +78,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         return container
     }()
+    
+    
+    func applicationProtectedDataWillBecomeUnavailable(_ application: UIApplication) {
+        
+        // force SwiftUI dynamic list fully refresh after standby
+        Health.getInstant().healthStore.stop( Health.getInstant().query)
+        Health.getInstant().query = nil;
+        
+        
+    }
+
+
 
     // MARK: - Core Data Saving support
+    
+ 
+    
+    
+    
 
     func saveContext () {
         let context = persistentContainer.viewContext

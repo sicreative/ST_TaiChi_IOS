@@ -77,6 +77,7 @@ class Health: ObservableObject, BTTaiChiDelegate {
     static var instant:Health = Health();
     var healthStore:HKHealthStore!
     var anchor:HKQueryAnchor!;
+    var query:HKAnchoredObjectQuery!;
     
     @Published var taiChiItems:[TaiChiItem] = []
     
@@ -188,13 +189,32 @@ class Health: ObservableObject, BTTaiChiDelegate {
     
      func get() {
         
+       // self.anchor = nil
+       // self.taiChiItems.removeAll()
+
+        
         // Check authorization status
         if healthStore==nil || healthStore.authorizationStatus(for: HKObjectType.workoutType()) == .notDetermined{
                   return
               }
         
         // Use Anchored Query for listening update feedback
-        let query = HKAnchoredObjectQuery(type: .workoutType(),predicate: nil, anchor: self.anchor, limit: HKObjectQueryNoLimit){query,samples,deletes,anchor,error in
+        
+        if query != nil {
+           return
+          
+            
+           
+           // healthStore.execute(query)
+            
+           // return
+        }
+        
+        Health.getInstant().anchor = nil;
+        taiChiItems.removeAll()
+        
+        
+      query = HKAnchoredObjectQuery(type: .workoutType(),predicate: nil, anchor: self.anchor, limit: HKObjectQueryNoLimit){query,samples,deletes,anchor,error in
             
             
             if error != nil{
@@ -216,12 +236,15 @@ class Health: ObservableObject, BTTaiChiDelegate {
                     }
                     // Append new samples on UI list
                     DispatchQueue.main.async {
-                        self.objectWillChange.send()
+                     //   self.objectWillChange.send()
                         self.taiChiItems.append(TaiChiItem(sample as! HKWorkout))
                     }
                 }
             }
+      
         }
+        
+        
         
         
         // Handler for HealthKit samples add/update
@@ -233,21 +256,29 @@ class Health: ObservableObject, BTTaiChiDelegate {
              for sample in samples!  {
                 var newItem = true;
                 
+                if sample.metadata!["taichiType"] == nil {
+                    continue
+                }
+                
                 // Check is the samples is new
                 for item in self.taiChiItems {
-                    if item.workout==sample {
+                    if item.workout.startDate == sample.startDate &&
+                        item.workout.endDate == sample.endDate {
                         newItem = false;
                         break;
                     }
                 }
                 
                 // confirm the sample is created by this app
-                if newItem && sample.metadata!["taichiType"] != nil {
+                if newItem {
                    
                     DispatchQueue.main.async {
+                     //   self.objectWillChange.send()
                         self.taiChiItems.append(TaiChiItem(sample as! HKWorkout))
                     }
                 }
+                
+               
                     
             }
             
@@ -257,11 +288,14 @@ class Health: ObservableObject, BTTaiChiDelegate {
                         for(index,item) in self.taiChiItems.enumerated().reversed(){
                          if item.workout.uuid == delete.uuid {
                              DispatchQueue.main.async {
+                          //      self.objectWillChange.send()
                                  self.taiChiItems.remove(at:index)
                                  }
                              break;
                              }
                         }
+                
+              
                         
                         
                     }
