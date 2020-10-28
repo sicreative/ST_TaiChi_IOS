@@ -95,7 +95,8 @@ class BT: NSObject, BlueSTSDKManagerDelegate, ObservableObject,BlueSTSDKNodeStat
         }
 
         
-        if (prevState == .connected && (newState == .dead || newState == .lost)){
+        if (newState == .lost || newState == .unreachable){
+            bTDisConnect()
             bTConnect()
         }
         
